@@ -1,7 +1,11 @@
 #!/bin/bash
 
+
+docker pull alpine:latest
+docker tag alpine:latest yoavklein3/alpine:latest
+docker push yoavklein3/alpine:latest
+
 # generate a key pair
 cosign generate-key-pair
 
-IMAGE=yoavklein3/nginx:latest
-cosign sign --key cosign.key $IMAGE
+cosign sign --key cosign.key yoavklein3/alpine:latest
