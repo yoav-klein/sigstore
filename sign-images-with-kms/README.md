@@ -1,4 +1,4 @@
-# Signing images
+# Signing images with KMS key
 ---
 
 In this example, we:
