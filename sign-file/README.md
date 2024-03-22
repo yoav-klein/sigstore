@@ -1,7 +1,7 @@
 # Sign Binary
 ---
 
-In this example, we sign a binary file (in this case just a text file)
+In this example, we sign a binary file (in this case just a text file) without a key
 
 When signing, Cosign:
 * Creates a public/private key pair (internally)
@@ -11,6 +11,7 @@ When signing, Cosign:
 * Fulcio passes the certificate back to cosign
 * Cosign signs the file with the private key
 * Cosign gets read of the private key
+* Signature and Certificate are pushed to Rekor for verification
 
 ## Usage
 ---
@@ -25,4 +26,3 @@ Verify:
 $ ./verify.sh
 ```
 
-# sigstore
