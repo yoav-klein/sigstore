@@ -1,0 +1,5 @@
+fulcio.sig
+
+terraform.tfstate*
+.terraform*
+environment
